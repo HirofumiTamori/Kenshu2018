@@ -3,10 +3,8 @@
     <div id="text-area">
       <textarea v-model="text" placeholder="入力してください"></textarea>
     </div>
-    <div id="read-button">
+    <div class="file-button-container">
       <button @click="loadText">読み込み</button>
-    </div>
-    <div id="write-button">
       <button @click="saveText">書き出し</button>
     </div>
 
@@ -33,17 +31,18 @@ export default {
   },
   methods: {
     loadText () {
-      console.log('read')
+      console.log('load')
       dialog.showOpenDialog({
         properties: ['openFile'],
         filters: [{name: 'MarkDown', extensions: ['md']}]},
       (fAry) => {
-        console.log(fAry)
+        console.log(fAry[0])
         fs.readFile(fAry[0], 'utf8', (err, data) => {
           if (err) {
             console.log(err)
             return err
           } else {
+            console.log(data)
             this.text = data
           }
         })
@@ -70,6 +69,12 @@ export default {
   #text-area textarea {
     width: 600px;
     height: 300px;
+  }
+  button {
+    float: left;
+  }
+  .file-button-container {
+    overflow: hidden;     
   }
 </style>
 
