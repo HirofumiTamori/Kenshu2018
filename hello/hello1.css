@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Impact', sans-serif;
+    color: #FF0000;
+    font-size: 72pt;
+}
+
+h1:hover {
+    font-family: 'Courier', sans-serif;
+    color: #0000FF;
+    font-size: 72pt;
+}
+
+body {
+    width: 800px;
+    height: 600px;
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+}
