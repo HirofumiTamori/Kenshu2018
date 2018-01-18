@@ -6,6 +6,9 @@
 ### [Node.JS](https://nodejs.org/ja/)
 ### [Visual Studio Code](https://code.visualstudio.com/)
 
+## サンプルなど
 
+### [Electron Quick Start](https://github.com/electron/electron-quick-start)
+### [Simple Samples](https://github.com/electron/simple-samples)
 
 
