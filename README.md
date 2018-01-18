@@ -11,4 +11,8 @@
 ### [Electron Quick Start](https://github.com/electron/electron-quick-start)
 ### [Simple Samples](https://github.com/electron/simple-samples)
 
+## Electron Vue
 
+### [electron-vue](https://github.com/SimulatedGREG/electron-vue)
+### [Element UI](http://element.eleme.io/#/en-US/component/installation)
+### [Vue Markdown](https://github.com/miaolz123/vue-markdown)
